@@ -1,5 +1,4 @@
 import sys
-import statistics as st
 
 abc = [int(val) for val in sys.stdin.readline().split(" ")]
 n = len(abc)
