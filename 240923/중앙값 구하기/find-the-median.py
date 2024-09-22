@@ -2,6 +2,10 @@ import sys
 import statistics as st
 
 abc = [int(val) for val in sys.stdin.readline().split(" ")]
+n = len(abc)
 abc.sort()
 
-print(abc[len(abc)//2]) if len(abc) % 2 == 0 else print(abc[(len(abc) - 1) // 2])
+if len(abc) % 2 == 0:
+    print(abc[n//2])
+else:
+    print(abc[(n - 1) // 2])
